@@ -233,9 +233,6 @@ Commands:
   dashboard
   help
 
-Completion:
-  source <(./run.sh completion)
-
 API keys are for this capture server. They are accepted by OpenAI and Anthropic compatible endpoints as bearer tokens.
 Run ./run.sh with no arguments for a foreground server. Run ./run.sh up for a background server.""")
 
