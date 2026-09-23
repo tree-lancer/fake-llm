@@ -1,0 +1,4 @@
+HOST=127.0.0.1
+PORT=8787
+DB_PATH=data/capture.sqlite
+REPLY_STRATEGY=hello
