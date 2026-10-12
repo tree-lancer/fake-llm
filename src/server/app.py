@@ -14,6 +14,9 @@ from src.server.strategy import load_strategy
 
 
 def bearer(headers):
+    api_key = headers.get("x-api-key") or headers.get("X-Api-Key")
+    if api_key:
+        return api_key.strip()
     value = headers.get("authorization") or headers.get("Authorization") or ""
     if value.lower().startswith("bearer "):
         return value[7:].strip()
